@@ -1,3 +1,72 @@
 ]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ [Krstudio@a290c25ce3e6:~/January$ git add [K[K[K[Kinti[K[Kit
 Reinitialized existing Git repository in /home/rstudio/January/.git/
 ]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git add -A
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git commit -m "Initial commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git coni[Kfig --globla[K[Kal user.emal[Kil jkaupp@gmail.com
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git config --global user.email jkaupp@gmail.com[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kname Jake Ka[K[K[K[K[K[K[K"Jake Kaupp"
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git config --global user.name "Jake Kaupp"email jkaupp@gmail.com[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pmmit -m "Initial commit"
+[master (root-commit) 141c589] Initial commit
+ 14 files changed, 77 insertions(+)
+ create mode 100644 .Rproj.user/E97C4A78/console06/468ED6B1
+ create mode 100644 .Rproj.user/E97C4A78/console06/INDEX001
+ create mode 100644 .Rproj.user/E97C4A78/sources/prop/2CC7C79
+ create mode 100644 .Rproj.user/E97C4A78/sources/prop/INDEX
+ create mode 100644 .Rproj.user/E97C4A78/sources/s-e0fc92d5/B2F4E9B4-contents
+ create mode 100644 .Rproj.user/E97C4A78/sources/s-e0fc92d5/C173ACEF-contents
+ create mode 100644 .Rproj.user/E97C4A78/sources/s-e0fc92d5/C2FF6999
+ create mode 100644 .Rproj.user/E97C4A78/sources/s-e0fc92d5/C2FF6999-contents
+ create mode 100644 .Rproj.user/E97C4A78/sources/s-e0fc92d5/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 January/.gitignore
+ create mode 100644 January/January.Rproj
+ create mode 100644 January/R/cleaning.R
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ gitt [K[K remote add https://github.com/jkaupp/datavizBattle.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git remote add https://github.com/jkaupp/datavizBattle.gitohttps://github.com/jkaupp/datavizBattle.gitrhttps://github.com/jkaupp/datavizBattle.gitihttps://github.com/jkaupp/datavizBattle.gitghttps://github.com/jkaupp/datavizBattle.gitihttps://github.com/jkaupp/datavizBattle.gitnhttps://github.com/jkaupp/datavizBattle.git https://github.com/jkaupp/datavizBattle.git
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git push origin mastr
+error: src refspec mastr does not match any.
+error: failed to push some refs to 'https://github.com/jkaupp/datavizBattle.git'
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git push origin mastrer[Cr[C[K
+
+error: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': error: cannot run rpostback-askpass: No such file or directory
+Password for 'https://github.com': 
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git push origin master
+error: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': jkaupp
+error: cannot run rpostback-askpass: No such file or directory
+Password for 'https://jkaupp@github.com': 
+Counting objects: 22, done.
+Delta compression using up to 4 threads.
+Compressing objects:   5% (1/17)   Compressing objects:  11% (2/17)   Compressing objects:  17% (3/17)   Compressing objects:  23% (4/17)   Compressing objects:  29% (5/17)   Compressing objects:  35% (6/17)   Compressing objects:  41% (7/17)   Compressing objects:  47% (8/17)   Compressing objects:  52% (9/17)   Compressing objects:  58% (10/17)   Compressing objects:  64% (11/17)   Compressing objects:  70% (12/17)   Compressing objects:  76% (13/17)   Compressing objects:  82% (14/17)   Compressing objects:  88% (15/17)   Compressing objects:  94% (16/17)   Compressing objects: 100% (17/17)   Compressing objects: 100% (17/17), done.
+Writing objects:   4% (1/22)   Writing objects:   9% (2/22)   Writing objects:  13% (3/22)   Writing objects:  18% (4/22)   Writing objects:  22% (5/22)   Writing objects:  27% (6/22)   Writing objects:  31% (7/22)   Writing objects:  36% (8/22)   Writing objects:  40% (9/22)   Writing objects:  45% (10/22)   Writing objects:  50% (11/22)   Writing objects:  54% (12/22)   Writing objects:  59% (13/22)   Writing objects:  63% (14/22)   Writing objects:  68% (15/22)   Writing objects:  72% (16/22)   Writing objects:  77% (17/22)   Writing objects:  81% (18/22)   Writing objects:  86% (19/22)   Writing objects:  90% (20/22)   Writing objects:  95% (21/22)   Writing objects: 100% (22/22)   Writing objects: 100% (22/22), 2.29 KiB | 0 bytes/s, done.
+Total 22 (delta 0), reused 0 (delta 0)
+To https://github.com/jkaupp/datavizBattle.git
+ * [new branch]      master -> master
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ touch README.md
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ usethis::u[K
+.git/        January/     .Rproj.user/ 
+rstudio@a290c25ce3e6:~/January$ usethis::[K[K[K[K[K[K[K[K[Kgit add -A
