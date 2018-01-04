@@ -70,3 +70,23 @@ To https://github.com/jkaupp/datavizBattle.git
 ]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ usethis::u[K
 .git/        January/     .Rproj.user/ 
 rstudio@a290c25ce3e6:~/January$ usethis::[K[K[K[K[K[K[K[K[Kgit add -A
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git commit -m "added readme"
+[master 9427eac] added readme
+ 10 files changed, 165 insertions(+), 1 deletion(-)
+ create mode 100644 .Rproj.user/E97C4A78/console06/468ED6B1.env
+ create mode 100644 .Rproj.user/E97C4A78/sources/prop/35312352
+ create mode 100644 .Rproj.user/E97C4A78/sources/prop/EC170206
+ create mode 100644 .Rproj.user/E97C4A78/sources/s-e0fc92d5/A6D41F12
+ create mode 100644 .Rproj.user/E97C4A78/sources/s-e0fc92d5/A6D41F12-contents
+ create mode 100644 .Rproj.user/E97C4A78/sources/s-e0fc92d5/C97E4EF3-contents
+ create mode 100644 January/README.md
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ git push origin master
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects:   5% (1/17)   Compressing objects:  11% (2/17)   Compressing objects:  17% (3/17)   Compressing objects:  23% (4/17)   Compressing objects:  29% (5/17)   Compressing objects:  35% (6/17)   Compressing objects:  41% (7/17)   Compressing objects:  47% (8/17)   Compressing objects:  52% (9/17)   Compressing objects:  58% (10/17)   Compressing objects:  64% (11/17)   Compressing objects:  70% (12/17)   Compressing objects:  76% (13/17)   Compressing objects:  82% (14/17)   Compressing objects:  88% (15/17)   Compressing objects:  94% (16/17)   Compressing objects: 100% (17/17)   Compressing objects: 100% (17/17), done.
+Writing objects:   5% (1/19)   Writing objects:  10% (2/19)   Writing objects:  15% (3/19)   Writing objects:  21% (4/19)   Writing objects:  26% (5/19)   Writing objects:  31% (6/19)   Writing objects:  36% (7/19)   Writing objects:  42% (8/19)   Writing objects:  47% (9/19)   Writing objects:  52% (10/19)   Writing objects:  57% (11/19)   Writing objects:  63% (12/19)   Writing objects:  68% (13/19)   Writing objects:  73% (14/19)   Writing objects:  78% (15/19)   Writing objects:  84% (16/19)   Writing objects:  89% (17/19)   Writing objects:  94% (18/19)   Writing objects: 100% (19/19)   Writing objects: 100% (19/19), 4.01 KiB | 0 bytes/s, done.
+Total 19 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/jkaupp/datavizBattle.git
+   141c589..9427eac  master -> master
+]0;/home/rstudio/Januaryrstudio@a290c25ce3e6:~/January$ 
