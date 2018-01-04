@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1515070023343.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1235390724",
+    "id" : "C2FF6999",
+    "lastKnownWriteTime" : 1515071672,
+    "last_content_update" : 1515071672462,
+    "path" : "~/January/January/R/cleaning.R",
+    "project_path" : "January/R/cleaning.R",
+    "properties" : {
+        "cursorPosition" : "13,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
