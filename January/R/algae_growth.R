@@ -35,9 +35,14 @@ tidy_algae <- algae_tbl %>%
   mutate(color = ifelse(divisions < 0, 1, 0)) %>% 
   arrange(species, temperature, light_intensity) 
 
+frost <-c("#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC")
 
-ggplot(tidy_algae, aes(x = temperature, y = species, group = species)) +
-  geom_ridgeline(aes(height = divisions, fill = light_intensity), min_height = -0.8, scale = 0.6, size = 0.2, color = "grey20") +
-  facet_wrap(~light_intensity, nrow = 1) +
+ggplot(tidy_algae, aes(x = temperature, y = factor(light_intensity), group = light_intensity, fill = factor(light_intensity))) +
+  geom_ridgeline(aes(height = divisions), min_height = -0.8, size = 0.2, color = "grey20") +
+  facet_wrap(~species, nrow = 4) +
   scale_x_continuous(breaks = seq(5, 30, 5)) +
-  theme_jk()
+  scale_fill_manual("Light Intensity", values = frost[c(1,4)]) +
+  theme_jk(grid = "X") +
+  theme(legend.position = c(0.9, 0.1))
+
+
