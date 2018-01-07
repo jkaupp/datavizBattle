@@ -2,7 +2,7 @@ library(tidyverse)
 library(rvest)
 library(ggridges)
 library(jkmisc)
-
+library(showtext)
 
 # Read in data
 url <- "http://aquatext.com/tables/algaegrwth.htm"
@@ -37,12 +37,19 @@ tidy_algae <- algae_tbl %>%
 
 frost <-c("#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC")
 
-ggplot(tidy_algae, aes(x = temperature, y = factor(light_intensity), group = light_intensity, fill = factor(light_intensity))) +
-  geom_ridgeline(aes(height = divisions), min_height = -0.8, size = 0.2, color = "grey20") +
+plot <- ggplot(tidy_algae, aes(x = temperature, y = factor(light_intensity), group = light_intensity, fill = factor(light_intensity))) +
+  geom_ridgeline(aes(height = divisions), min_height = -0.8, color = "grey30", scale = 0.8, size = 0.2) +
   facet_wrap(~species, nrow = 4) +
   scale_x_continuous(breaks = seq(5, 30, 5)) +
-  scale_fill_manual("Light Intensity", values = frost[c(1,4)]) +
-  theme_jk(grid = "X") +
-  theme(legend.position = c(0.9, 0.1))
+  scale_fill_manual("Light Intensity", values = frost[c(4,1)], labels = c("2500 lux", "5000 lux")) +
+  theme_minimal() +
+  labs(x = "Temperature (°C)",
+       y = NULL,
+       title = "Specific growth rates of algae at different light intensities and temperatures",
+       subtitle = "Ridgline plot of growth rate (divisions per day) vs temperature (°C). Light intensity (lux) indicated by color") +
+  theme(legend.position = c(0.9, 0.1),
+        axis.text.y = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid = element_line(color = "grey95", size = 0.1))
 
-
+ggsave(plot = plot, "algae growth.pdf", width = 10, height = 5)
